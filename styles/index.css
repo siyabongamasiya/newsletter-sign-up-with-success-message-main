@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+#mainSection{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: vh;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+#details{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: start;
+}
+
+h1{
+    color: hsl(235, 18%, 26%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-weight: 400; 
+    color: hsl(235, 18%, 26%);
+}
+
+#description{
+    color: hsl(235, 18%, 26%);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+#updates{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(235, 18%, 26%);
+}
+
+.update{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+}
+
+#input{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    color: hsl(235, 18%, 26%);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+#email{
+    padding: 12px;
+    font-size: 16px;
+    box-sizing:border-box;
+    border-radius: 8px solid grey;
+    width: 100%;
+}
+
+button{
+    width: 100%;
+    background-color: hsl(234, 29%, 20%);
+    border-radius: 8px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 16px;
+}
+
+button:hover{
+    background: linear-gradient(to right, #FE5378, #FF693f);
+}
+
+.attribution{
+    padding-top: 50px;
+    width: 100%;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    padding: 16px;
+}
+
+@media(max-width: 375px){
+    #mainSection{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #illustrationImage{
+        src: "./assets/images/illustration-sign-up-mobile.svg";
+    }
+
+    #mainSection > :nth-child(2) {
+        order: -1; 
+    }
+}
+
+#thanksCard{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+
+.overlay {
+    visibility: hidden;
+    position: fixed;      
+    top: 0; left: 0;      
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    display: flex;        
+    align-items: center;  
+    justify-content: center; 
+    z-index: 1000;      
+    padding: 16px;  
+  }
+
+  
+
+  #thanksCard > :nth-child(1){
+    object-fit:fill;
+    width: 10vw;
+    height: 10vh;
+  }
+
+  span{
+    font-weight: 700;
+    font-size: 16px;
+    color: hsl(235, 18%, 26%);
+  }
+
+
