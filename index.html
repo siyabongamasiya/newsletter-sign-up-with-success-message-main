@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles/index.css">
+  <link rel="">
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
@@ -35,11 +36,14 @@
         </section>
         <!--email-->
         <div id="input">
-          <label for="email">Email address</label>
+          <div id="labels">
+            <label for="email">Email address</label>
+            <label for="email" id="error-msg">Valid email address required!</label>
+          </div>
           <input type="text" placeholder="email@company.com" id="email">
         </div>
         <!--button-->
-        <button>Subscribe to monthly newsletter</button>
+        <button id="subscribeButton">Subscribe to monthly newsletter</button>
       </div>
       <!--illustration image-->
       <div id="illustration">
@@ -59,19 +63,19 @@
     </div>
    </footer>
 
-   <div class="overlay">
+   <div id="overlay">
     <div id="thanksCard">
       <picture>
         <img id="illustrationImage" src="./assets/images/icon-success.svg" alt="Sign Up Illustration">
       </picture>
       <h1>Thanks for <br> subscribing!</h1>
       <p>A confirmation email has been sent to <br>
-        <span>ABC</span> .Please open it and click <br> 
+        <span id="confirmedEmail">ABC</span> .Please open it and click <br> 
         the button inside to confirm your subscription</p>
-      <button>Dismiss message</button>
+      <button id="dismissButton">Dismiss message</button>
     </div>
    </div>
-   
-  
+
+   <script src="./javascript/index.js"></script>
 </body>
 </html>
